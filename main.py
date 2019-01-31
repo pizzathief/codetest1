@@ -45,7 +45,6 @@ all_data['cubic_weight'] = all_data['size.height'] * centimetre_to_metre_convers
 
 # now get the average of what we're interested in
 air_conditioners = all_data.loc[all_data['category'] == 'Air Conditioners']
-print(air_conditioners)
 count = len(air_conditioners.index)
 total = air_conditioners['cubic_weight'].sum()
 print('average cubic weight of air conditioners is ',  '%.2f' % (total/count), ' kg')
